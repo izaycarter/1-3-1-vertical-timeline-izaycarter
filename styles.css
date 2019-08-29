@@ -3,13 +3,18 @@
     word-break: break-all;
 }
 
-/* Creating the vertial line  */
+body{
+    background-color: #ECECEC;
+    position: relative;
+}
+
+/* Creating the vertial line & circles  */
 .container ul{
     list-style-type: none;
     position:relative;
     width: 4px;
     margin: 0 auto;
-    background: #1D1F21;
+    background: #005E93;
 }
 
 .container ul::after{
@@ -21,11 +26,45 @@
     width:20px;
     height:100%;
     border-radius: 50%;
-    background-color: : #ABE7D0;
+    background-color: : #D1D1D1;
 }
 
 ul{
     padding-left: 0px;
+}
+
+
+#first::after{
+    content:"";
+    position: absolute;
+    width: 30px;
+    height:30px;
+    background: #005E93;
+    border-radius: 50%;
+    top:53px;
+    right:-13px;
+}
+
+#second::after{
+    content:"";
+    position: absolute;
+    width: 30px;
+    height:30px;
+    background: #005E93;
+    border-radius: 50%;
+    top:890px;
+    left:-13px;
+}
+
+#third::after{
+    content:"";
+    position: absolute;
+    width: 30px;
+    height:30px;
+    background: #005E93;
+    border-radius: 50%;
+    top:1725px;
+    left:-13px;
 }
 /*-------------------------------  */
 
@@ -37,7 +76,7 @@ ul{
     padding: 40px;
     bottom: 0;
     width:500px;
-    background-color:#ABE7D0;
+    background-color:#D1D1D1;
 }
 
 .container ul li div::before{
@@ -70,7 +109,7 @@ ul{
   content: "";
   left: -15px;
   border-width: 8px 16px 8px 0;
-  border-color: transparent #ABE7D0 transparent transparent;
+  border-color: transparent #D1D1D1 transparent transparent;
   top: 60px;
 }
 
@@ -78,8 +117,67 @@ ul{
   content: "";
   left: 500px;
   border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent #ABE7D0 ;
+  border-color: transparent transparent transparent #D1D1D1 ;
   top: 60px;
 }
 
 /*--------------------------------------------------  */
+
+blockquote{
+    padding-left: 2px;
+    border-left: solid #005E93;
+}
+
+
+
+/*things that were real and fun but not real-fun  */
+span{
+    float:right;
+    position: absolute;
+    background-color: red;
+    color:white;
+    padding: 5px;
+    top: 0;
+    right: 0;
+}
+
+#cap1{
+    position: absolute;
+    width: 2%;
+    bottom: 1881px;
+    left: 698px;
+}
+#cap2{
+    position: absolute;
+    width: 2%;
+    bottom: 1044px;
+    left: 698px;
+}
+
+#cap3{
+    position: absolute;
+    width: 2%;
+    bottom: 209px;
+    left: 698px;
+}
+#second-date{
+    z-index: 3;
+}
+
+#hands{
+    height: 102px;
+    position: absolute;
+    width: 500px;
+    top: 0;
+    left: 0px;
+    z-index: 1;
+}
+
+#title-page{
+    position: relative;
+    z-index: 3;
+    color:#005E93;
+    right: -121px;
+    top: -20px;
+}
+/*-----------------------  */
